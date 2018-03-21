@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "471881312011",
+    "firebase_url": "https://pinstragram.firebaseio.com",
+    "project_id": "pinstragram",
+    "storage_bucket": "pinstragram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471881312011:android:296c2b0e8889258b",
+        "android_client_info": {
+          "package_name": "com.example.mypc.pinstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471881312011-gmg5pbc80gcu9f5sdfglrbd85qpr00t1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mypc.pinstagram",
+            "certificate_hash": "e3ddd071b179bfa55130466ceea7b5d9955ab59c"
+          }
+        },
+        {
+          "client_id": "471881312011-u6rc5s8ilv3bj5k1dc7bqaihrcs5ro5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWKkV96BguvUnHvReFyRq-QBjxAv3-eY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471881312011-u6rc5s8ilv3bj5k1dc7bqaihrcs5ro5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
