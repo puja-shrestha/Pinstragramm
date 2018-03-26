@@ -67,11 +67,12 @@
 
     </LinearLayout>
 
-        <ProgressBar
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:id="@+id/progressBar"
-            android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <TextView
         android:layout_width="wrap_content"

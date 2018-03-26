@@ -1,6 +1,7 @@
 package com.example.mypc.pinstagram.Login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mypc.pinstagram.Home.HomeActivity;
 import com.example.mypc.pinstagram.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -30,12 +32,13 @@ public class LoginActivity extends AppCompatActivity {
 
     //firebase
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListner;
+    private FirebaseAuth.AuthStateListener mAuthListener;
 
     private Context mContext;
     private ProgressBar mProgressBar;
     private EditText mEmail, mPassword;
     private TextView mPleaseWait;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -112,6 +115,16 @@ public class LoginActivity extends AppCompatActivity {
                                          Toast.makeText(LoginActivity.this, getString(R.string.auth_success),
                                                  Toast.LENGTH_SHORT).show();
 
+
+                                              /*
+                                                If the user is Logged in then navigate to HomeActivity and call "finish()'
+                                               */
+                                         if(mAuth.getCurrentUser() != null){
+                                             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                                             startActivity(intent);
+                                             finish();
+                                         }
+
                                          mProgressBar.setVisibility(View.GONE);
                                          mPleaseWait.setVisibility(View.GONE);
                                      }
@@ -119,10 +132,21 @@ public class LoginActivity extends AppCompatActivity {
                                      // ...
                                  }
                              });
-
                  }
              }
          });
+
+         TextView linkSignUp = (TextView) findViewById(R.id.link_Signup);
+         linkSignUp.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Log.d(TAG, "onClick: navigating to register screen");
+                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                 startActivity(intent);
+             }
+         });
+
+
      }
 
     /**
@@ -133,7 +157,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mAuthListner = new FirebaseAuth.AuthStateListener() {
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -153,7 +177,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListner);
+        mAuth.addAuthStateListener(mAuthListener);
         // Check if user is signed in (non-null) and update UI accordingly.
         //FirebaseUser currentUser = mAuth.getCurrentUser();
         //updateUI(currentUser);
@@ -162,8 +186,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        if (mAuthListner != null) {
-            mAuth.removeAuthStateListener(mAuthListner);
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
         }
     }
+
 }

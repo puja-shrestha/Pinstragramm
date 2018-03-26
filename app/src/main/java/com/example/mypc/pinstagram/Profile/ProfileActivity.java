@@ -55,18 +55,18 @@ public class ProfileActivity extends AppCompatActivity {
 
     private  void tempGridSetup(){
         ArrayList<String> imgURLs = new ArrayList<>();
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=KMrijfvWvKaMNM%253A%252C5RTu1qS62pV07M%252C_&usg=__mlKbShaIhnK1RCVLt8FLh3r0Ysc%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IwAEwCw#imgrc=KMrijfvWvKaMNM:");
-        imgURLs.add("http://developer.android.com/images/dialog_buttons.png");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=ok3Ujapxrx5yrM%253A%252CnVrbZ6x84_QItM%252C_&usg=__cFM2GzCYZtRn8ByZYXapVRUqjgY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IygEwEA#imgrc=ok3Ujapxrx5yrM:");
-        imgURLs.add("http://developer.android.com/images/dialog_buttons.png");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=lAHthDF3S1ACoM%253A%252C2bZLA8JdC6ZaTM%252C_&usg=__Kzu9sB22CMAqAB5fSkL81NlFFyY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IyAEwDw#imgrc=fiJ-HZc0KFC-WM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=lAHthDF3S1ACoM%253A%252C2bZLA8JdC6ZaTM%252C_&usg=__Kzu9sB22CMAqAB5fSkL81NlFFyY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IyAEwDw#imgrc=Tck2Y_BFj_sFFM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=KMrijfvWvKaMNM%253A%252C5RTu1qS62pV07M%252C_&usg=__mlKbShaIhnK1RCVLt8FLh3r0Ysc%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IwAEwCw#imgrc=KMrijfvWvKaMNM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=KMrijfvWvKaMNM%253A%252C5RTu1qS62pV07M%252C_&usg=__mlKbShaIhnK1RCVLt8FLh3r0Ysc%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IwAEwCw#imgrc=mVrwcCQle9g31M:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=ok3Ujapxrx5yrM%253A%252CnVrbZ6x84_QItM%252C_&usg=__cFM2GzCYZtRn8ByZYXapVRUqjgY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IygEwEA#imgrc=ok3Ujapxrx5yrM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=lAHthDF3S1ACoM%253A%252C2bZLA8JdC6ZaTM%252C_&usg=__Kzu9sB22CMAqAB5fSkL81NlFFyY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IyAEwDw#imgrc=lAHthDF3S1ACoM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=lAHthDF3S1ACoM%253A%252C2bZLA8JdC6ZaTM%252C_&usg=__Kzu9sB22CMAqAB5fSkL81NlFFyY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IyAEwDw#imgrc=fiJ-HZc0KFC-WM:");
-        imgURLs.add("https://www.google.com.np/search?q=image&tbm=isch&source=iu&ictx=1&fir=lAHthDF3S1ACoM%253A%252C2bZLA8JdC6ZaTM%252C_&usg=__Kzu9sB22CMAqAB5fSkL81NlFFyY%3D&sa=X&ved=0ahUKEwi-keGRsubZAhWCrY8KHWzQAxQQ_h0IyAEwDw#imgrc=Tck2Y_BFj_sFFM:");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
+        imgURLs.add("https://i.imgur.com/JTb2pXP.jpg");
 
         setupImageGrid(imgURLs);
     }

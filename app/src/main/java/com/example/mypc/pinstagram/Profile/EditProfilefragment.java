@@ -44,7 +44,7 @@ public class EditProfilefragment extends android.support.v4.app.Fragment {
 
     private void setProfileImage(){
         Log.d(TAG, "setProfileImage: setting profile image.");
-        String imgURL = "https://www.google.com.np/imgres?imgurl=https://josephratliff.name/wp-content/uploads/2017/11/android-central.jpg&imgrefurl=https://josephratliff.name/who-is-misleading-us-about-latest-android-news/&h=999&w=1332&tbnid=_UsufijKPWfHmM:&tbnh=194&tbnw=259&usg=__jjUZSRQmc6LFudyZSJnIfrL_ns8%3D&vet=1&docid=CgZ_k3jpgVqNJM";
+        String imgURL = "https://i.imgur.com/EwZRpvQ.jpg";
         UniversalImageLoader.setImage(imgURL, mProfilePhoto,null, "https://");
 
         //https://josephratliff.name/who-is-misleading-us-about-latest-android-news/
